@@ -1,0 +1,911 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+    google fonts
+==========================================
+*/
+/*  font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+/*  font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+.section-padding {
+    padding: 80px 0px;
+}
+.section-header h2 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+.section-header h2 span {color: #ff0000;}
+.section-header h2:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 156px;
+    top: 100%;
+    left: 50%;
+    margin-top: 8px;
+    margin-left: -78px;
+    background: #ff0000;
+  }
+  .section-header h2:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 100%;
+    border-radius: 50%;
+    background: #ff0000;
+    margin-left: -8px;
+    left: 50%;
+}
+.content-top-space{
+  margin-top: 55px;
+}
+/*
+==========================================
+    Header menu Css
+==========================================
+*/
+html,body{
+	height: 100%;
+}
+
+.logo img {
+    margin-top: 10px;
+}
+
+.logo h4 {
+    margin-top: 25px;
+    color: #fe320e;
+    font-size: 30px;
+}
+
+.header-main {
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+}
+
+.header-main:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: '';
+    background: #393838;
+    opacity: .49;
+    z-index: -1;
+}
+nav.main-menu ul {
+    float: right;
+}
+
+nav.main-menu ul li {float: left;}
+
+nav.main-menu ul li a {
+    color: #fff;
+    padding: 33px 20px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serifsans-serif;
+    font-weight: 400;
+    transition: .3s;
+}
+
+nav.main-menu ul li a:hover {
+	color: #fe320a;
+}
+
+/*
+==========================================
+    Header Background Img css
+==========================================
+*/
+.header_img {
+    background-image: url(../img/header-img.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    background-attachment: fixed;
+}
+.header_img:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	opacity: .42;
+	background: #252525;
+  z-index: -1;
+}
+/*
+==========================================
+    Header Background Img d-table css
+==========================================
+*/
+.d-table{
+	display: table;
+	height: 100%;
+  text-align: center;
+  width: 100%;
+}
+.d-table-cell{
+	display: table-cell;
+	vertical-align: middle;
+  width: 100%;
+}
+.header_img .container,
+.header_img .row,
+.header_img .col-md-12{
+  height: 100%;
+}
+.header-content {
+    color: #fff;
+    margin-top: 95px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.header-content span {
+    color: #fe320a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.header-content p {
+    width: 850px;
+    margin: 20px auto 26px auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.header-content a {
+    text-decoration: none;
+    color: #fff;
+    background: #fe320e;
+    padding: 5px 25px;
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    transition: .3s;
+}
+
+.header-content a:hover {
+    background: #fff;
+    color: #fe320a;
+}
+
+
+/*
+==========================================
+          About css
+==========================================
+*/
+
+.about-left img {
+    width: 100%;
+    height: auto;
+}
+
+.about-left {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.about-left .about-left-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+.about-left .about-left-details:after {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#5a5f60;
+    z-index:-1;
+    opacity:.70
+}
+
+.about-left h4 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+.about-left-details ul li {
+    display: inline-block;
+}
+
+.about-left-details ul li a {
+    font-size: 18px;
+    color: #fff;
+    background: #252525;
+    width: 35px;
+    height: 35px;
+    display: block;
+    padding: 5px 0px;
+    border-radius: 50px;
+    margin: 5px;
+    transition: .3s;
+}
+
+.about-left-details {
+    padding: 13px 0;
+}
+
+.about-left-details ul {
+    margin-top: 13px;
+}
+
+.about-left-details ul li a:hover {
+    background: #fff;
+    color: #252525;
+}
+
+
+/*
+==========================================
+          About Main Containt css
+==========================================
+*/
+.nandine-about{
+  background: #f6f6f6;
+}
+.about-right h3 {
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.about-right p {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 26px;
+    margin-top: 40px;
+}
+
+.about-right a {
+    text-decoration: none;
+    font-size: 20px;
+    background: #ff0000;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    padding: 4px 20px;
+    margin-top: 30px;
+    border: 1px solid #ff0000;
+    transition: .3s;
+}
+
+.about-right a:hover {
+    background: #fff;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+
+
+/*
+==========================================
+          Videoo css
+==========================================
+*/
+
+.video-area {
+    background-image: url(../img/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    color: #fff;
+    background-attachment: fixed;
+}
+.video-area h2{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+.video-icon a {
+    color: #fff;
+    font-size: 32px;
+    border: 2px solid #fff;
+    width: 95px;
+    display: inline-block;
+    height: 95px;
+    line-height: 88px;
+    border-radius: 10px;
+    margin-top: 40px;
+    transition: .3s;
+}
+
+.video-icon a:hover {
+    background: #fff;
+    color: #000;
+}
+.video-area:after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height:100%;
+  background: #000;
+  top: 0;
+  left: 0;
+  opacity: .60;
+  z-index: -1;
+}
+
+
+
+/*
+==========================================
+          service contain css
+==========================================
+*/
+.services-box{
+  margin-top: 70px;
+}
+.services-box i {
+
+    color: #ff0000;
+    font-size: 48px;
+}
+.services-box h3 {
+
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    margin: 13px 0px;
+}
+.services-box p {
+
+    line-height: 24px;
+    color: #535353;
+}
+
+
+
+/*
+==========================================
+          My Skill Css
+==========================================
+*/
+.Skill {
+
+    background: #f3f3f3;
+}
+.skill-left h3 {
+
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #151515;
+}
+.skill-left p {
+
+    font-weight: 300;
+    color: #151515;
+    line-height: 26px;
+    margin-top: 20px;
+}
+/*
+==========================================
+          kkkk
+==========================================
+*/
+
+.skillbar {
+  position: relative;
+  display: inline-block;
+  margin: 15px 0;
+  width: 100%;
+  background: #eee;
+  height: 35px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+  background: #6adcfa;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.skillbar-bar {
+  height: 35px;
+  width: 0px;
+  background: #6adcfa;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/*
+==========================================
+          kkkk
+==========================================
+*/
+
+.skill-right h3 {
+
+    font-size: 24px;
+    color: #151515;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+
+}
+.skill-right p {
+
+    line-height: 26px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 18px;
+
+}
+.nandine-skill-bar p {
+
+    margin-top: 0;
+
+}
+
+
+.skillbar{
+  overflow: hidden;
+}
+.skillbar-item h5 {
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #2c2b2b;
+    font-weight: 400;
+    margin-bottom: -5px;
+    margin-top: 15px;
+
+}
+
+.skillbar-item .skillbar {
+
+    background: #000;
+    height: 18px;
+    border-radius: 30px;
+
+}
+.skillbar-item .skillbar-bar {
+
+    background: #ff0000 !important;
+    height: 10px;
+    border-radius: 30px;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+
+}
+.skillbar .skill-bar-percent {
+
+    color: #fff;
+    top: -9px;
+
+}
+.nandine-skill-bar .skillbar{
+  margin-bottom: 0;
+}
+/*
+==========================================
+          counter css
+==========================================
+*/
+.counter {
+	background: url('..//img/counter-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 0;
+	color: #fff;
+	text-align: center;
+  background-attachment: fixed;
+}
+.counter-number {
+
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+
+}
+.counter::after {
+	content: '';
+	position: absolute;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: .6;
+	top: 0;
+	left: 0;
+}
+.counter-box i {
+	font-size: 22px;
+	width: 55px;
+	height: 55px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	line-height: 50px;
+	margin-bottom: 10px;
+}
+.happy {
+	font-size: 26px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+/*
+==========================================
+          Portfolio css
+==========================================
+*/
+.portfolio-menu {
+    text-align: center;
+}
+.portfolio-item {
+    margin-top: 28px;
+    position: relative;
+    transition: .3s;
+
+}
+
+.portfolio-menu button {
+    background: transparent;
+    border: 0;
+    color: #3c3c3c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .3s;
+    border: none;
+    outline: none;
+}
+.portfolio-menu button:hover{
+  color: red;
+}
+button.mixitup-control-active {
+    color: red;
+}
+.portfolio-item img {
+    max-width: 100%;
+}
+.portfolio-item:hover .portfolio-item-hover{
+    visibility: visible;
+    opacity: 1;
+}
+.portfolio-item-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background: #ff000069;
+    justify-content: center;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0;
+}
+.portfolio-item-hover a {
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+/*
+==========================================
+          Team css
+==========================================
+*/
+.team {
+    background: #e1e1e1;
+}
+.team-item {
+    position: relative;
+}
+.team-item-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    color: #ffffff;
+}
+.team-item-hover:after {
+    content: '';
+    top: 0;
+    left: 0;
+    background: red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity:0;
+    z-index: -1;
+    visibility: hidden;
+    transition: .3s;
+}
+.team-item-content {
+    position: absolute;
+    background: red;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+}
+.team-item-content {
+    position: absolute;
+    background: red;
+    width: 100%;
+    height: auto;
+    bottom:-62px;
+    text-align: center;
+    color: #fff;
+    padding: 5px 0px;
+    transition: .3s;
+}
+.team-item-content ul {
+    margin-top: 5px;
+}
+.team-item-content ul li {
+    display: inline-block;
+}
+.team-item-content ul li a {
+    color: #fff;
+    padding: 0px 5px;
+    font-size: 18px;
+}
+.team-item:hover .team-item-hover:after{
+    visibility: visible;
+    opacity: .44;
+}
+.team-item:hover .team-item-content{
+    bottom: 0;
+}
+
+/*
+==========================================
+          Testimonial Css
+==========================================
+*/
+.testimonial {
+   background: url('../img/testimonial/testimonial-bg.jpg');
+}
+.owl-carousel.owl-carousel-testimonial.owl-theme.owl-loaded.owl-drag img {
+    width: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+h4.testimonial-name {
+    font-size: 18px;
+    margin: 10px 0px;
+    font-family: 'Raleway', sans-serif;
+}
+.testimonial {
+    background: url(../img/testimonial/testimonial-bg.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background-attachment: fixed;
+}
+.testimonial:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+    z-index: -1;
+}
+
+/*
+==========================================
+          Blog Css
+==========================================
+*/
+
+.blog-item {
+    box-shadow: 0px 0px 10px #ddd;
+}
+.blog-img img {
+    max-width: 100%;
+    border-bottom: 8px solid;
+}
+article.blog-details {
+    padding: 20px 18px;
+    line-height: 24px;
+    font-family: 'Raleway', sans-serif;
+}
+.blog-title h2 {
+    font-size: 24px;
+    color: #433f3f;
+}
+.blog-title h2 {
+    font-size: 24px;
+    color: #433f3f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.date {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+a.blog-button {
+    text-decoration: none;
+    background: red;
+    padding: 3px 17px;
+    display: inline-block;
+    margin-top: 20px;
+    color: #fff;
+    transition: .3s;
+    border:1px solid red
+}
+a.blog-button:hover {
+    background: #fff;
+    color: #000;
+}
+/*
+==========================================
+          Contact Css
+==========================================
+*/
+.contact {
+    background: url(../img/contact-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    color: #fff;
+    background-attachment: fixed;
+}
+.contact:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: -1;
+    opacity: .55;
+}
+.contact input {
+    background: transparent;
+    border: 1px solid #fff;
+    margin-bottom: 25px;
+    height: 40px;
+}
+.contact textarea {
+    background: transparent;
+    border: 1px solid #fff;
+    margin-bottom: 25px;
+    height: 150px;
+    padding-top: 20px;
+}
+.contact button {
+    background: #ff0000;
+    border: none;
+    font-size: 14px;
+    padding: 6px 20px;
+    transition: .3s;
+}
+.contact button:hover {
+    background: #ffffff;
+    color: #ff0000
+}
+.contact input::placeholder {
+    color: #fff;
+}
+.contact textarea::placeholder {
+    color: #fff;
+}
+
+/*
+==========================================
+          Footer Css
+==========================================
+*/
+.footer {
+    background: #121111;
+    color: #fff;
+    padding: 10px 0px;
+}
+.footer-icon ul li {
+    float: left;
+    margin-right: 20px;
+}
+.footer-icon ul li:last-child {
+    margin-right: 0px;
+}
+.footer-icon ul li a {
+    color: #fff;
+}
